@@ -1,0 +1,16 @@
+server:
+  port: 8080
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url:
+users:
+  customer:
+    url: localhost:${server.port}
+teacher:
+  id: ${random.uuid}
+  age: ${random.int(30,50)}
+  num1: ${random.int}
+  numlong1: ${random.long}
+  numlong2: ${random.long(10,20)}
+  value: ${random.value}

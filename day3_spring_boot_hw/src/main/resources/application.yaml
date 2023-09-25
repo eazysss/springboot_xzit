@@ -1,0 +1,23 @@
+teacher:
+  name: 张三
+  gender: 男
+  age: 21
+  stuList:
+    - name: 李白
+      gender: 男
+      age: ${random.int(15,18)}
+      scoreMap:
+        Chinese: ${random.int(80,90)}
+        Math: ${random.int(70,80)}
+        English: ${random.int(90,100)}
+    - name: 杜甫
+      gender: 女
+      age: ${random.int(15,18)}
+      scoreMap:
+        Chinese: ${random.int(80,90)}
+        Math: ${random.int(70,80)}
+        English: ${random.int(90,100)}
+
+spring:
+  profiles:
+    active: prod
